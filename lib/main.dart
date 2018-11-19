@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
 void main(){
-  
+
   runApp(
-    Center(child: new Text("Makadini Pano",textDirection: TextDirection.ltr,))
+    MaterialApp(
+      title: "The Nimble App",
+      home: new Material(
+        color: Colors.deepPurple,
+        child: Center(child: new Text("Makadini!",textDirection: TextDirection.ltr,style: TextStyle(color: Colors.white, fontSize:36.0),)),
+      ),
+    )
   );
+
 }
